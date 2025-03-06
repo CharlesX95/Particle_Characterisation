@@ -3,6 +3,8 @@
 *.mp4
 *.avi
 *.npz
-Files/
+*.png
+*.csv
+
 __pycache__/
-Figs/
+
