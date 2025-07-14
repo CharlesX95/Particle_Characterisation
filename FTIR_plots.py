@@ -21,7 +21,7 @@ def plot_ftir(folder_path, output_folder="BigDuck", lineweight=8, minor_ticks=5)
     
     # Loop through all .csv files in the folder
     for filename in os.listdir(folder_path):
-        if filename.endswith('.csv'):
+        if filename.endswith('.csv') or filename.endswith('.CSV'):
             file_path = os.path.join(folder_path, filename)
             
             # Read the CSV file (headerless)
@@ -53,14 +53,14 @@ def plot_ftir(folder_path, output_folder="BigDuck", lineweight=8, minor_ticks=5)
             
             
             
-            #plt.show()
+            plt.show()
             # Save the plot
             output_path = os.path.join(output_folder, f"{title}.png")
-            plt.savefig(output_path, dpi=300)
-            plt.close()
+            #plt.savefig(output_path, dpi=300)
+            #plt.close()
             
     print(f"Plots saved in the folder: {output_folder}")
 
 # Example usage
-folder_path = "./ftir_data_BigDuck"  # Replace with your folder path
+folder_path = "./FTIR_plots/FTIR_data"  # Replace with your folder path
 plot_ftir(folder_path, lineweight=2, minor_ticks=4)  # Adjust lineweight and minor ticks as needed

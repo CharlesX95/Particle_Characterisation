@@ -219,8 +219,6 @@ def data_combiner2(sample_name, variable='Eq Diam', olapmin=5, olapmax=50, olapb
     # Add overlap region limits
     plt.vlines([olapmin, olapmax], 0, max(number_fraction) * 0.8, color='black', linestyle='dashed', label='Overlap Limits')
 
-    # Log scale for axes
-    plt.xscale('log')
 
     # Plot details
     plt.xlabel('Size (µm) [Log Scale]', fontsize=12)
@@ -293,7 +291,7 @@ def data_combiner(sample_name, variable = 'Eq Diam', olapmin=5, olapmax=50, olap
     plt.figure(figsize=(22.5, 12))
     
     
-    
+05    
     #plt.hist(data_10x[variable], bins=log_bins, alpha=1, color='blue')
     # plt.hist(data_40x[variable], bins=log_bins, alpha=0.1, color='green')
     # plt.hist(log_bins[:-1], bins=log_bins, weights=synthesized_counts_full, alpha=0.1, color='green')
@@ -702,12 +700,7 @@ plot_types = ['data_combiner']
 
 plot_and_save_samples(variables, plot_types, isSave = True)
 
-
-
-
 #plot_heatmap("Hellinger", vmax = 0.4, reference= 'Nylon 6')
-
-
 
 #fit_histograms_to_log_normal(data_dir=data_dir, method = 'bimodal-log-normal')
 #fit_pdf(method = 'bimodal')

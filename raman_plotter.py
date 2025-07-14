@@ -44,9 +44,10 @@ def plot_ftir(folder_path, output_folder="raman_plots", lineweight=2, minor_tick
             plt.plot(wavenumber, intensity, color = 'black',  linewidth=lineweight)
             plt.xlabel('Wavenumber (cm⁻¹)')
             plt.ylabel('Intensity (arb. units)')
+            plt.xlim(250, 2200)
             #plt.ylim(-0.1, 1.1)
             plt.gca().invert_xaxis()  # Reverse the x-axis
-            #plt.title(f"Raman {title}")
+            plt.title(f"Raman {title}")
             plt.tight_layout(pad=0.3)
             
             

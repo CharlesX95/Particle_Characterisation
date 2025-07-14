@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['raman_plotter.py', 'FTIR_plots.py', 'averages_calculator.py', 'MasterSizerOverlay.py', 'Plotter.py', '40x_data\\HDPE_40x.csv']
+recent_files = ['new_plotter.py', 'raman_plotter.py', 'Histograms.py', 'averages_calculator.py', 'MasterSizerOverlay.py', 'overlappingMaster.py', 'Plotter.py', 'newPET2\\PET_20x.csv']
 
 [main]
 version = 0.2.0
