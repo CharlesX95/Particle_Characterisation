@@ -6,5 +6,12 @@
 *.png
 *.csv
 
+10x_data/
+40x_data/
+combined_data/
+ftir_data_BigDuck/
+BigDuck/
+*_data/
+*_files/
 __pycache__/
 
